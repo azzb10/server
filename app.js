@@ -1,8 +1,8 @@
-import express from 'express';
+const express = require( 'express');
 
-import sequelize from './utils/database.js';
+const sequelize = require( './utils/database.js');
 
-import router from './routes/routes.js';
+const router = require( './routes/routes.js');
 
 const app = express();
 
@@ -21,4 +21,4 @@ app.use(router);
 
 sequelize.sync(); 
 
-app.listen(3306);
+app.listen(5500);

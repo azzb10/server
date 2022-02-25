@@ -1,8 +1,8 @@
-import { Sequelize } from 'sequelize';
+const { Sequelize } = require( 'sequelize');
 
 const sequelize = new Sequelize('everydb', 'root', '88087988', {
     dialect: 'mysql',
     host: 'localhost', 
 });
 
-export default sequelize;
+module.exports = sequelize;
